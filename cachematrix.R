@@ -1,11 +1,10 @@
 ## These pair of functions catches the inverse of an invertible matrix
-## 
+ 
 
 ## makeCatchMatrix creates a list of four functions
-## set function sets the input matrix which is given as an argument to makeCatchMatrix function. It doesn't do anything. 
-#  Even if you remove this function your overall result will not change
-## get function takes the matrix which was set by set function 
-## setinverse stores the inverse in the enclosing enviroment i.e. the enviroment in which makeCatchMatrix was defined
+## set function takes the input matrix as arguments. The makeCatchMatrix function takes the same arguments
+## get function gets the matrix which was set by set function 
+## setinverse sets the inverse in the enclosing enviroment i.e. the enviroment in which makeCatchMatrix was defined
 ## getinverse gets the inverse value from the setinverse function
 
 makeCatchMatrix<-function(x=matrix()){
